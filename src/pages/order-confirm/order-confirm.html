@@ -1,0 +1,61 @@
+<!--
+  Generated template for the OrderConfirmPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>确认订单</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list no-lines>
+    <!-- 收货人信息 -->
+    <ion-item text-wrap>
+      <ion-avatar item-start>
+        <ion-icon name="pin"></ion-icon>
+      </ion-avatar>
+      <h3>收货人:{{3+2}}</h3>
+      <p>收货地址:北京市 海淀区 大钟寺123号 139366668888</p>
+      <button item-end ion-button clear color="light">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-item>
+    <hr/>
+    <!-- 产品信息 -->
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/product/md/57ad359dNd4a6f130.jpg" />
+      </ion-thumbnail>
+      <h3>mac air</h3>
+      <p>处理器速度升级至1.8GHz，续航依旧持久，长达12小时！</p>
+      <h3 style="color:red">￥6888.00 x 1</h3>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/product/md/5787107bN73d05ad5.jpg" />
+      </ion-thumbnail>
+      <h3>mac air</h3>
+      <p>处理器速度升级至1.8GHz，续航依旧持久，长达12小时！</p>
+      <h3 style="color:red">￥6888.00 x 3</h3>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/product/md/57871086N86c8f0ab.jpg" />
+      </ion-thumbnail>
+      <h3>mac air</h3>
+      <p>处理器速度升级至1.8GHz，续航依旧持久，长达12小时！</p>
+      <h3 style="color:red">￥6888.00 x 2</h3>
+    </ion-item>
+    <hr/>
+    <button ion-button block (click)="pay()" color="secondary" round>在线支付</button>
+  </ion-list>
+
+</ion-content>
